@@ -1,8 +1,20 @@
-const repeatString = function(wordInput, amountToLoop) {
-    for (let i = amountToLoop; amountToLoop > 0; amountToLoop-- ){
-        console.log(wordInput);
+
+const repeatString = function( string, number ) {
+    let result = '';
+
+    if(number < 0) {
+        return 'ERROR';
     }
-}
+
+
+      while (number > 0 ){
+        result += string;
+        number--;
+      }return result;
+    }
+
+
+
 
 
 module.exports = repeatString
